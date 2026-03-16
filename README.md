@@ -30,6 +30,7 @@ Each guide covers:
 | Guide | Description | Difficulty |
 |-------|-------------|------------|
 | [🚦 Rate Limiter](use-cases/rate-limiter-system-design.md) | Distributed rate limiting at 500M req/day. Token bucket, Redis Cluster, Lua atomicity, circuit breakers | ⭐⭐⭐ Senior |
+| [⚡ Distributed Cache](use-cases/distributed-cache-system-design.md) | Caching at 1M reads/sec. Cache-aside vs write-through, Redis vs Memcached, consistent hashing, stampede prevention, eviction policies | ⭐⭐⭐ Senior |
 
 > More guides coming soon. Each one added after a real design session.
 
@@ -40,13 +41,14 @@ Each guide covers:
 ```
 software-design/
 │
-├── use-cases/                    # One folder per design problem
-│   └── rate-limiter-system-design.md
+├── use-cases/                               # One folder per design problem
+│   ├── rate-limiter-system-design.md
+│   └── distributed-cache-system-design.md
 │
-├── docs/                         # GitHub Pages website source
+├── docs/                                    # GitHub Pages website source
 │   └── index.html
 │
-├── README.md                     # You are here
+├── README.md                                # You are here
 └── LICENSE
 ```
 
@@ -68,7 +70,7 @@ software-design/
 
 ## 🗺️ Roadmap — Upcoming Guides
 
-- [ ] Distributed Cache (Redis vs Memcached, eviction, consistency)
+- [x] ~~Distributed Cache (Redis vs Memcached, eviction, consistency)~~ ✅
 - [ ] Notification System (push, email, SMS at scale)
 - [ ] URL Shortener (hashing, redirects, analytics)
 - [ ] Search Autocomplete (trie, prefix indexing, ranking)
@@ -84,6 +86,12 @@ software-design/
 This repo has a companion website where all guides are browsable with a clean UI.
 
 **→ [simplymanas.github.io/software-design](https://simplymanas.github.io/software-design)**
+
+To enable GitHub Pages on your fork:
+1. Go to **Settings → Pages**
+2. Source: **Deploy from branch**
+3. Branch: `main` | Folder: `/docs`
+4. Save — site is live in ~60 seconds
 
 ---
 
