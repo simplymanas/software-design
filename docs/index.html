@@ -515,11 +515,237 @@
       transform: none;
     }
 
+    /* ─── ABOUT ─── */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 2rem;
+      margin-bottom: 5rem;
+      align-items: start;
+    }
+
+    .about-left {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      position: sticky;
+      top: 80px;
+    }
+
+    .about-avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 4px;
+      background: linear-gradient(135deg, var(--accent2), var(--purple));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--sans);
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #080c14;
+      letter-spacing: -0.05em;
+      flex-shrink: 0;
+    }
+
+    .about-name {
+      font-family: var(--sans);
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+
+    .about-title {
+      font-size: 0.75rem;
+      color: var(--accent);
+      margin-top: -0.5rem;
+    }
+
+    .about-loc {
+      font-size: 0.72rem;
+      color: var(--text-faint);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .about-divider {
+      height: 1px;
+      background: var(--border);
+    }
+
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--text-dim);
+      font-size: 0.78rem;
+      padding: 0.5rem 0.6rem;
+      border-radius: 3px;
+      border: 1px solid transparent;
+      transition: all 0.2s;
+    }
+
+    .social-link:hover {
+      color: var(--text);
+      background: rgba(56,189,248,0.05);
+      border-color: var(--border);
+    }
+
+    .social-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+
+    .si-linkedin { background: rgba(10,102,194,0.2); color: #0a66c2; }
+    .si-github   { background: rgba(255,255,255,0.06); color: var(--text); }
+    .si-twitter  { background: rgba(29,161,242,0.1); color: #1da1f2; }
+    .si-dzone    { background: rgba(196,25,36,0.15); color: #c41924; }
+    .si-instagram{ background: rgba(225,48,108,0.12); color: #e1306c; }
+
+    .about-right {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .about-bio {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2rem;
+    }
+
+    .about-bio p {
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      line-height: 1.9;
+      margin-bottom: 1rem;
+    }
+
+    .about-bio p:last-child { margin-bottom: 0; }
+
+    .about-bio strong { color: var(--text); font-weight: 600; }
+
+    .skills-grid {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.75rem;
+    }
+
+    .skills-grid h4 {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-faint);
+      margin-bottom: 1rem;
+    }
+
+    .skills-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skill-pill {
+      font-size: 0.72rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 2px;
+      background: rgba(56,189,248,0.06);
+      border: 1px solid rgba(56,189,248,0.15);
+      color: var(--accent);
+    }
+
+    .exp-timeline {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.75rem;
+    }
+
+    .exp-timeline h4 {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-faint);
+      margin-bottom: 1.25rem;
+    }
+
+    .timeline-item {
+      display: flex;
+      gap: 1rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 1.25rem;
+    }
+
+    .timeline-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .timeline-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      margin-top: 5px;
+      flex-shrink: 0;
+      box-shadow: 0 0 8px rgba(56,189,248,0.4);
+    }
+
+    .timeline-dot.dim { background: var(--border2); box-shadow: none; }
+
+    .timeline-content { flex: 1; }
+
+    .timeline-role {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text);
+      font-family: var(--sans);
+    }
+
+    .timeline-company {
+      font-size: 0.75rem;
+      color: var(--accent);
+      margin-top: 0.1rem;
+    }
+
+    .timeline-period {
+      font-size: 0.68rem;
+      color: var(--text-faint);
+      margin-top: 0.2rem;
+    }
+
     /* ─── RESPONSIVE ─── */
     @media (max-width: 640px) {
       .hero { padding: 5rem 0 3rem; }
       .nav-links { display: none; }
       .cards-grid { grid-template-columns: 1fr; }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-left { position: static; }
     }
   </style>
 </head>
@@ -533,6 +759,7 @@
         <a href="#guides">Guides</a>
         <a href="#approach">Approach</a>
         <a href="#roadmap">Roadmap</a>
+        <a href="#about">About</a>
         <a href="https://github.com/simplymanas/software-design" target="_blank">GitHub ↗</a>
       </div>
     </div>
@@ -587,7 +814,7 @@
       <div class="cards-grid">
 
         <!-- Rate Limiter — LIVE -->
-        <a class="card reveal" href="https://github.com/simplymanas/software-design/blob/main/use-cases/ratelimiter.md" target="_blank">
+        <a class="card reveal" href="https://github.com/simplymanas/software-design/blob/main/use-cases/rate-limiter-system-design.md" target="_blank">
           <div class="card-top">
             <span class="card-icon">🚦</span>
             <span class="card-difficulty diff-senior">⭐⭐⭐ Senior</span>
@@ -745,13 +972,145 @@
     </div>
   </section>
 
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// about</span>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+
+        <!-- LEFT: Identity card -->
+        <div class="about-left reveal">
+          <div class="about-avatar">MR</div>
+          <div>
+            <div class="about-name">Manas Ranjan Dash</div>
+            <div class="about-title">Software Architect · SDE-3 @ Tesco Technology</div>
+          </div>
+          <div class="about-loc">📍 Bengaluru, India</div>
+          <div class="about-divider"></div>
+          <div class="social-links">
+            <a class="social-link" href="https://www.linkedin.com/in/manasranjandash/" target="_blank">
+              <div class="social-icon si-linkedin">in</div>
+              linkedin.com/in/manasranjandash
+            </a>
+            <a class="social-link" href="https://github.com/simplymanas" target="_blank">
+              <div class="social-icon si-github">⌥</div>
+              github.com/simplymanas
+            </a>
+            <a class="social-link" href="https://twitter.com/simplymanas" target="_blank">
+              <div class="social-icon si-twitter">𝕏</div>
+              @simplymanas
+            </a>
+            <a class="social-link" href="https://dzone.com/authors/simplymanas" target="_blank">
+              <div class="social-icon si-dzone">DZ</div>
+              dzone.com/authors/simplymanas
+            </a>
+            <a class="social-link" href="https://instagram.com/popularwallpaper" target="_blank">
+              <div class="social-icon si-instagram">◈</div>
+              @popularwallpaper
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Bio + skills + timeline -->
+        <div class="about-right">
+
+          <div class="about-bio reveal">
+            <p>
+              I'm a <strong>seasoned software architect with 19 years of experience</strong> building systems that scale —
+              currently at <strong>Tesco Technology, Bengaluru</strong>. Over nearly 15 years at Tesco,
+              I've led multiple technology transformation journeys, balancing engineering principles with
+              stakeholder realities and delivery timelines.
+            </p>
+            <p>
+              My work sits at the intersection of <strong>distributed systems, ML/AI, and product engineering</strong>.
+              I hold a master's degree in Machine Learning & AI and actively apply those foundations to
+              real-world backend architecture. I'm a published author on <strong>DZone</strong> — writing about
+              LLMs, product management for AI, and software design patterns.
+            </p>
+            <p>
+              I run <strong>#MindMapMondaysByManas</strong> — a series of hand-crafted visual mind maps on software
+              concepts, security, spring, system design, and more. This repo is the long-form companion to that series:
+              deep-dive guides written the way I wish I'd found them when I was learning.
+            </p>
+          </div>
+
+          <div class="skills-grid reveal">
+            <h4>Core Expertise</h4>
+            <div class="skills-pills">
+              <span class="skill-pill">System Design</span>
+              <span class="skill-pill">Distributed Systems</span>
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">Java</span>
+              <span class="skill-pill">Microservices</span>
+              <span class="skill-pill">Redis</span>
+              <span class="skill-pill">Kafka</span>
+              <span class="skill-pill">Machine Learning</span>
+              <span class="skill-pill">LLMs / GenAI</span>
+              <span class="skill-pill">Prompt Engineering</span>
+              <span class="skill-pill">AWS</span>
+              <span class="skill-pill">API Design</span>
+              <span class="skill-pill">NLP / NLU</span>
+              <span class="skill-pill">Agile / Product Eng</span>
+            </div>
+          </div>
+
+          <div class="exp-timeline reveal">
+            <h4>Experience Highlights</h4>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <div class="timeline-role">Software Architect / SDE-3</div>
+                <div class="timeline-company">Tesco Technology, Bengaluru</div>
+                <div class="timeline-period">~15 years · Current</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot dim"></div>
+              <div class="timeline-content">
+                <div class="timeline-role">Published Author</div>
+                <div class="timeline-company">DZone — Software Design, LLMs, Product Engineering</div>
+                <div class="timeline-period">Multiple featured articles</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot dim"></div>
+              <div class="timeline-content">
+                <div class="timeline-role">Master's Degree — Machine Learning & AI</div>
+                <div class="timeline-company">Indira Gandhi National Open University</div>
+                <div class="timeline-period">Post-graduate · AI / ML specialisation</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot dim"></div>
+              <div class="timeline-content">
+                <div class="timeline-role">Certification — Supervised Machine Learning</div>
+                <div class="timeline-company">DeepLearning.AI · Regression & Classification</div>
+                <div class="timeline-period">Coursera · Andrew Ng</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- FOOTER -->
   <footer>
     <div class="container">
+      <div style="display:flex; justify-content:center; gap:1.5rem; margin-bottom:1.25rem; flex-wrap:wrap;">
+        <a href="https://www.linkedin.com/in/manasranjandash/" target="_blank" style="color:var(--text-faint);text-decoration:none;font-size:0.75rem;transition:color 0.2s;" onmouseover="this.style.color='#0a66c2'" onmouseout="this.style.color='var(--text-faint)'">LinkedIn</a>
+        <a href="https://github.com/simplymanas" target="_blank" style="color:var(--text-faint);text-decoration:none;font-size:0.75rem;transition:color 0.2s;" onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--text-faint)'">GitHub</a>
+        <a href="https://twitter.com/simplymanas" target="_blank" style="color:var(--text-faint);text-decoration:none;font-size:0.75rem;" onmouseover="this.style.color='#1da1f2'" onmouseout="this.style.color='var(--text-faint)'">Twitter / X</a>
+        <a href="https://dzone.com/authors/simplymanas" target="_blank" style="color:var(--text-faint);text-decoration:none;font-size:0.75rem;" onmouseover="this.style.color='#c41924'" onmouseout="this.style.color='var(--text-faint)'">DZone</a>
+        <a href="https://instagram.com/popularwallpaper" target="_blank" style="color:var(--text-faint);text-decoration:none;font-size:0.75rem;" onmouseover="this.style.color='#e1306c'" onmouseout="this.style.color='var(--text-faint)'">Instagram</a>
+        <a href="https://github.com/simplymanas/software-design" target="_blank" style="color:var(--text-faint);text-decoration:none;font-size:0.75rem;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-faint)'">Source Repo ↗</a>
+      </div>
       <p>
-        Built by <a href="https://github.com/simplymanas" target="_blank">@simplymanas</a> ·
-        <a href="https://github.com/simplymanas/software-design" target="_blank">View Source on GitHub</a> ·
-        MIT License
+        Built by <a href="https://www.linkedin.com/in/manasranjandash/" target="_blank">Manas Ranjan Dash</a> · MIT License
       </p>
       <p style="margin-top: 0.5rem; font-size: 0.7rem;">
         All diagrams are Mermaid — they render natively in the GitHub markdown files.
