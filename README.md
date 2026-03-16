@@ -85,12 +85,6 @@ This repo has a companion website where all guides are browsable with a clean UI
 
 **→ [simplymanas.github.io/software-design](https://simplymanas.github.io/software-design)**
 
-To enable GitHub Pages on your fork:
-1. Go to **Settings → Pages**
-2. Source: **Deploy from branch**
-3. Branch: `main` | Folder: `/docs`
-4. Save — site is live in ~60 seconds
-
 ---
 
 ## ✍️ Author
