@@ -32,6 +32,12 @@ Each guide covers:
 | [🚦 Rate Limiter](use-cases/rate-limiter-system-design.md) | Distributed rate limiting at 500M req/day. Token bucket, Redis Cluster, Lua atomicity, circuit breakers | ⭐⭐⭐ Senior |
 | [⚡ Distributed Cache](use-cases/distributed-cache.md) | Caching at 1M reads/sec. Cache-aside vs write-through, Redis vs Memcached, consistent hashing, stampede prevention, eviction policies | ⭐⭐⭐ Senior |
 
+### Machine Learning & AI Systems
+
+| Guide | Description | Difficulty |
+|-------|-------------|------------|
+| [🧠 How LLMs Work](use-cases/how-llm-works.md) | Transformer architecture, attention mechanism, pre-training pipeline, RLHF, inference, RAG, serving at scale | ⭐⭐⭐⭐ Staff |
+
 > More guides coming soon. Each one added after a real design session.
 
 ---
@@ -43,7 +49,8 @@ software-design/
 │
 ├── use-cases/                               # One folder per design problem
 │   ├── rate-limiter-system-design.md
-│   └── distributed-cache-system-design.md
+│   ├── distributed-cache.md
+│   └── how-llm-works.md
 │
 ├── docs/                                    # GitHub Pages website source
 │   └── index.html
