@@ -38,6 +38,18 @@ Each guide covers:
 |-------|-------------|------------|
 | [🧠 How LLMs Work](use-cases/how-llm-works.md) | Transformer architecture, attention mechanism, pre-training pipeline, RLHF, inference, RAG, serving at scale | ⭐⭐⭐⭐ Staff |
 
+### Fintech & Payments
+
+| Guide | Description | Difficulty |
+|-------|-------------|------------|
+| [💸 How UPI Works](use-cases/how-upi-works.md) | NPCI architecture, VPA resolution, 2FA, idempotency, Google Pay vs PhonePe vs Paytm internals, fraud detection at scale | ⭐⭐⭐ Senior |
+
+### Payments & Fintech
+
+| Guide | Description | Difficulty |
+|-------|-------------|------------|
+| [💸 How UPI Works](use-cases/how-upi-works.md) | NPCI architecture, VPA resolution, P2P/QR/Collect flows, Google Pay/PhonePe/Paytm internals, MPIN security, 10B txn/month scalability | ⭐⭐⭐⭐ Staff |
+
 > More guides coming soon. Each one added after a real design session.
 
 ---
@@ -50,7 +62,8 @@ software-design/
 ├── use-cases/                               # One folder per design problem
 │   ├── rate-limiter-system-design.md
 │   ├── distributed-cache.md
-│   └── how-llm-works.md
+│   ├── how-llm-works.md
+│   └── how-upi-works.md
 │
 ├── docs/                                    # GitHub Pages website source
 │   └── index.html
@@ -93,6 +106,7 @@ software-design/
 This repo has a companion website where all guides are browsable with a clean UI.
 
 **→ [simplymanas.github.io/software-design](https://simplymanas.github.io/software-design)**
+
 
 
 ---
