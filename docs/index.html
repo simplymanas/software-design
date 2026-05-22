@@ -786,7 +786,7 @@
   <div class="container">
     <div class="stats-bar reveal">
       <div class="stat">
-        <span class="stat-num">4</span>
+        <span class="stat-num">7</span>
         <div class="stat-label">Guides Published</div>
       </div>
       <div class="stat">
@@ -814,8 +814,7 @@
       <div class="cards-grid">
 
         <!-- Rate Limiter — LIVE -->
-        <a class="card reveal" href="https://github.com/simplymanas/software-design/blob/main/use-cases/ratelimiter.md" target="_blank">
-          
+        <a class="card reveal" href="https://github.com/simplymanas/software-design/blob/main/use-cases/rate-limiter-system-design.md" target="_blank">
           <div class="card-top">
             <span class="card-icon">🚦</span>
             <span class="card-difficulty diff-senior">⭐⭐⭐ Senior</span>
@@ -856,20 +855,28 @@
           <div class="card-link">Read guide →</div>
         </a>
 
-        <!-- Notification System — COMING -->
-        <div class="card coming">
+        <!-- Notification System — LIVE -->
+        <a class="card reveal" href="https://github.com/simplymanas/software-design/blob/main/use-cases/notification-system.md" target="_blank">
           <div class="card-top">
             <span class="card-icon">🔔</span>
-            <span class="card-difficulty diff-coming">Coming Soon</span>
+            <span class="card-difficulty diff-senior">⭐⭐⭐ Senior</span>
           </div>
           <h3>Notification System</h3>
-          <p>Push, email, SMS at scale. Message queues, delivery guarantees, retry strategies, and user preferences management.</p>
+          <p>
+            Push, email, SMS, in-app at 100B/month. Kafka-backed priority pipeline,
+            at-least-once delivery with dedup, user preferences, DND, frequency capping,
+            retry with backoff, DLQ, and circuit breakers per provider.
+          </p>
           <div class="card-tags">
             <span class="tag">kafka</span>
-            <span class="tag">push</span>
+            <span class="tag">fcm</span>
+            <span class="tag">ses</span>
+            <span class="tag">twilio</span>
+            <span class="tag">dedup</span>
             <span class="tag">at-least-once</span>
           </div>
-        </div>
+          <div class="card-link">Read guide →</div>
+        </a>
 
         <!-- URL Shortener — COMING -->
         <div class="card coming">
@@ -918,6 +925,53 @@
 
       </div>
 
+      <!-- E-Commerce & Retail Section Header -->
+      <div class="section-header reveal" style="margin-top: 2.5rem;">
+        <span class="section-tag">// e-commerce &amp; retail</span>
+        <div class="section-line"></div>
+      </div>
+      <div class="cards-grid">
+
+        <!-- Flash Inventory Sync — LIVE -->
+        <a class="card reveal" href="https://github.com/simplymanas/software-design/blob/main/use-cases/flash-inventory-sync.md" target="_blank">
+          <div class="card-top">
+            <span class="card-icon">⚡</span>
+            <span class="card-difficulty" style="background:rgba(239,68,68,0.12);color:#ef4444;border:1px solid rgba(239,68,68,0.3);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.2rem 0.5rem;border-radius:2px;white-space:nowrap;">⭐⭐⭐⭐⭐ Principal</span>
+          </div>
+          <h3>Hyper-Local Flash Inventory Sync</h3>
+          <p>
+            Preventing split-second overselling across 5,000 dark stores at 500k mutations/sec.
+            Redis Lua atomics, Redlock for bundles, soft-hold reservation lifecycle,
+            sub-millisecond cache invalidation, event sourcing, CRDT counters, and flash sale virtual queues.
+          </p>
+          <div class="card-tags">
+            <span class="tag">redis-lua</span>
+            <span class="tag">redlock</span>
+            <span class="tag">event-sourcing</span>
+            <span class="tag">crdt</span>
+            <span class="tag">dark-stores</span>
+            <span class="tag">oversell-prevention</span>
+          </div>
+          <div class="card-link">Read guide →</div>
+        </a>
+
+        <!-- More E-Commerce — COMING -->
+        <div class="card coming">
+          <div class="card-top">
+            <span class="card-icon">🛒</span>
+            <span class="card-difficulty diff-coming">Coming Soon</span>
+          </div>
+          <h3>Flash Sale Platform</h3>
+          <p>End-to-end flash sale system: pre-registration, virtual queues, dynamic pricing, fraud prevention, and post-sale reconciliation.</p>
+          <div class="card-tags">
+            <span class="tag">queues</span>
+            <span class="tag">pricing</span>
+            <span class="tag">fraud</span>
+          </div>
+        </div>
+
+      </div>
+
       <!-- ML / AI Section Header -->
       <div class="section-header reveal" style="margin-top: 2.5rem;">
         <span class="section-tag">// ml &amp; ai systems</span>
@@ -947,20 +1001,28 @@
           <div class="card-link">Read guide →</div>
         </a>
 
-        <!-- Vector DB — COMING -->
-        <div class="card coming">
+        <!-- Vector DB — LIVE -->
+        <a class="card reveal" href="https://github.com/simplymanas/software-design/blob/main/use-cases/vector-database-design.md" target="_blank">
           <div class="card-top">
             <span class="card-icon">🔍</span>
-            <span class="card-difficulty diff-coming">Coming Soon</span>
+            <span class="card-difficulty diff-staff">⭐⭐⭐⭐ Staff</span>
           </div>
           <h3>Vector Database Design</h3>
-          <p>ANN search, HNSW indexing, IVF-PQ, embedding pipelines, and building a production RAG system at scale.</p>
+          <p>
+            HNSW and IVF-PQ deep dive, embedding pipelines, filtered search trade-offs,
+            hybrid sparse+dense retrieval, production RAG architecture, and designing
+            a 1B-vector system. Pinecone vs Qdrant vs pgvector comparison.
+          </p>
           <div class="card-tags">
             <span class="tag">hnsw</span>
+            <span class="tag">ivf-pq</span>
             <span class="tag">embeddings</span>
-            <span class="tag">pinecone</span>
+            <span class="tag">rag</span>
+            <span class="tag">hybrid-search</span>
+            <span class="tag">ann</span>
           </div>
-        </div>
+          <div class="card-link">Read guide →</div>
+        </a>
 
         <!-- ML Feature Store — COMING -->
         <div class="card coming">
@@ -1149,14 +1211,14 @@
 
           <div class="about-bio reveal">
             <p>
-              I'm a <strong>seasoned software architect with 21 years of experience</strong> building systems that scale —
-              currently at <strong>Tesco Technology, Bengaluru</strong>. Over nearly 18 years at Tesco,
+              I'm a <strong>seasoned software architect with 19 years of experience</strong> building systems that scale —
+              currently at <strong>Tesco Technology, Bengaluru</strong>. Over nearly 15 years at Tesco,
               I've led multiple technology transformation journeys, balancing engineering principles with
               stakeholder realities and delivery timelines.
             </p>
             <p>
-              My work sits at the intersection of <strong>distributed systems, ML/AI, NLP, chatbot/voicebot and product engineering</strong>.
-              I hold a Master's degree in Computr Applications and apply those foundations to
+              My work sits at the intersection of <strong>distributed systems, ML/AI, and product engineering</strong>.
+              I hold a master's degree in Machine Learning & AI and actively apply those foundations to
               real-world backend architecture. I'm a published author on <strong>DZone</strong> — writing about
               LLMs, product management for AI, and software design patterns.
             </p>
@@ -1208,7 +1270,9 @@
             <div class="timeline-item">
               <div class="timeline-dot dim"></div>
               <div class="timeline-content">
-                <div class="timeline-role">Master's Degree — MCA</div>
+                <div class="timeline-role">Master's Degree — Machine Learning & AI</div>
+                <div class="timeline-company">Indira Gandhi National Open University</div>
+                <div class="timeline-period">Post-graduate · AI / ML specialisation</div>
               </div>
             </div>
             <div class="timeline-item">
