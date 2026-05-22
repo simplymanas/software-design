@@ -31,12 +31,20 @@ Each guide covers:
 |-------|-------------|------------|
 | [🚦 Rate Limiter](use-cases/rate-limiter-system-design.md) | Distributed rate limiting at 500M req/day. Token bucket, Redis Cluster, Lua atomicity, circuit breakers | ⭐⭐⭐ Senior |
 | [⚡ Distributed Cache](use-cases/distributed-cache.md) | Caching at 1M reads/sec. Cache-aside vs write-through, Redis vs Memcached, consistent hashing, stampede prevention, eviction policies | ⭐⭐⭐ Senior |
+| [🔔 Notification System](use-cases/notification-system.md) | Push, email, SMS, in-app at 100B/month. Kafka pipeline, delivery guarantees, dedup, preferences, rate limiting, DLQ | ⭐⭐⭐ Senior |
+
+### E-Commerce & Retail Systems
+
+| Guide | Description | Difficulty |
+|-------|-------------|------------|
+| [⚡ Hyper-Local Flash Inventory Sync](use-cases/flash-inventory-sync.md) | Preventing overselling across 5,000 dark stores. Redis Lua atomics, Redlock, reservation TTL, event sourcing, CRDT, flash sale virtual queues | ⭐⭐⭐⭐⭐ Principal |
 
 ### Machine Learning & AI Systems
 
 | Guide | Description | Difficulty |
 |-------|-------------|------------|
 | [🧠 How LLMs Work](use-cases/how-llm-works.md) | Transformer architecture, attention mechanism, pre-training pipeline, RLHF, inference, RAG, serving at scale | ⭐⭐⭐⭐ Staff |
+| [🔍 Vector Database Design](use-cases/vector-database-design.md) | HNSW, IVF-PQ, embeddings, filtered search, hybrid sparse+dense, RAG pipelines, Pinecone vs Qdrant vs pgvector, 1B-vector design | ⭐⭐⭐⭐ Staff |
 
 ### Fintech & Payments
 
@@ -62,7 +70,10 @@ software-design/
 ├── use-cases/                               # One folder per design problem
 │   ├── rate-limiter-system-design.md
 │   ├── distributed-cache.md
+│   ├── notification-system.md
+│   ├── flash-inventory-sync.md
 │   ├── how-llm-works.md
+│   ├── vector-database-design.md
 │   └── how-upi-works.md
 │
 ├── docs/                                    # GitHub Pages website source
@@ -91,7 +102,7 @@ software-design/
 ## 🗺️ Roadmap — Upcoming Guides
 
 - [x] ~~Distributed Cache (Redis vs Memcached, eviction, consistency)~~ ✅
-- [ ] Notification System (push, email, SMS at scale)
+- [x] ~~Notification System (push, email, SMS at scale)~~ ✅
 - [ ] URL Shortener (hashing, redirects, analytics)
 - [ ] Search Autocomplete (trie, prefix indexing, ranking)
 - [ ] Distributed Message Queue (Kafka internals)
@@ -107,7 +118,11 @@ This repo has a companion website where all guides are browsable with a clean UI
 
 **→ [simplymanas.github.io/software-design](https://simplymanas.github.io/software-design)**
 
-
+To enable GitHub Pages on your fork:
+1. Go to **Settings → Pages**
+2. Source: **Deploy from branch**
+3. Branch: `main` | Folder: `/docs`
+4. Save — site is live in ~60 seconds
 
 ---
 
