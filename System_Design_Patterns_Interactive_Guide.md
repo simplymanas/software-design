@@ -1,5 +1,5 @@
 # 🌟 System Design Patterns
-> **A fun guide for curious minds (Age 10+)**
+
 
 ```text
                  🏗️ SYSTEM DESIGN PATTERNS
