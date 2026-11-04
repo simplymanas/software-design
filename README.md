@@ -43,14 +43,14 @@ Each guide covers:
 
 | Guide | Description | Difficulty |
 |-------|-------------|------------|
-| [🧠 How LLMs Work](use-cases/how-llm-works.md) | Transformer architecture, attention mechanism, pre-training pipeline, RLHF, inference, RAG, serving at scale | ⭐⭐⭐⭐ Staff |
+| [🧠 How LLMs Work](use-cases/how-llm-works.md) | Transformer architecture, attention mechanism, pre-training pipeline, RLHF, inference, RAG, serving at scale. 📖 [Read on Medium](https://medium.com/simplymanas/how-large-language-models-work-a-complete-design-guide-9635358f4f17) | ⭐⭐⭐⭐ Staff |
 | [🔍 Vector Database Design](use-cases/vector-database-design.md) | HNSW, IVF-PQ, embeddings, filtered search, hybrid sparse+dense, RAG pipelines, Pinecone vs Qdrant vs pgvector, 1B-vector design | ⭐⭐⭐⭐ Staff |
 
 ### Fintech & Payments
 
 | Guide | Description | Difficulty |
 |-------|-------------|------------|
-| [💸 How UPI Works](use-cases/how-upi-works.md) | NPCI architecture, VPA resolution, 2FA, idempotency, Google Pay vs PhonePe vs Paytm internals, fraud detection at scale | ⭐⭐⭐ Senior |
+| [💸 How UPI Works](use-cases/how-upi-works.md) | NPCI architecture, VPA resolution, 2FA, idempotency, Google Pay vs PhonePe vs Paytm internals, fraud detection at scale. 📖 [Read on Medium](https://medium.com/simplymanas/how-upi-works-a-complete-system-design-guide-9b00e4dcbd1e) | ⭐⭐⭐ Senior |
 
 ### Payments & Fintech
 
